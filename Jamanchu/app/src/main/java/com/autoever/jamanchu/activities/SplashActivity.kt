@@ -25,7 +25,8 @@ class SplashActivity : AppCompatActivity() {
         // 2초 뒤에 인트로 액티비티로 이동
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, IntroActivity::class.java))
-            finish()
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            finish()// 메인 화면으로 이동
         }, 2000)
     }
 }
