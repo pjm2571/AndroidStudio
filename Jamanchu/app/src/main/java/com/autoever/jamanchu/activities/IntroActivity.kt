@@ -1,5 +1,6 @@
 package com.autoever.jamanchu.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -64,7 +65,10 @@ class IntroActivity : AppCompatActivity() {
         }, 3000) // 3000ms (3초) 딜레이
 
         val buttonSignUp = findViewById<TextView>(R.id.buttonSignUp)
-        buttonSignUp.setOnClickListener {  }
+        buttonSignUp.setOnClickListener {
+            val intent = Intent(this, SignUpActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }
