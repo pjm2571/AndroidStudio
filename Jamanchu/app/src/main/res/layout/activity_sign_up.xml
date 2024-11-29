@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".activities.SignUpActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewTitle"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:gravity="center"
@@ -18,6 +18,7 @@
         android:textSize="20dp"
         android:textStyle="bold" />
 
+    <!-- Email Section -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,7 +28,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textViewEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="이메일" />
@@ -44,6 +45,7 @@
             android:padding="8dp" />
     </LinearLayout>
 
+    <!-- Password Section -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -53,13 +55,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textViewPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="비밀번호" />
 
         <EditText
-            android:id="@+id/editTextPW"
+            android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="4dp"
@@ -70,6 +72,7 @@
             android:padding="8dp" />
     </LinearLayout>
 
+    <!-- Nickname Section -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -79,13 +82,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textViewNickname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="닉네임" />
 
         <EditText
-            android:id="@+id/editTextNick"
+            android:id="@+id/editTextNickname"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="4dp"
@@ -96,6 +99,7 @@
             android:padding="8dp" />
     </LinearLayout>
 
+    <!-- Introduction Section -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -105,13 +109,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textViewIntro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="한줄소개" />
 
         <EditText
-            android:id="@+id/editTextIntroduction"
+            android:id="@+id/editTextIntro"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="4dp"
@@ -122,6 +126,7 @@
             android:padding="8dp" />
     </LinearLayout>
 
+    <!-- Gender Section -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -131,34 +136,33 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textViewGender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="성별" />
 
         <RadioGroup
-            android:id="@+id/radioGroup"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/radioButton"
+                android:id="@+id/radioButtonFemale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="여성" />
 
             <RadioButton
-                android:id="@+id/radioButton2"
+                android:id="@+id/radioButtonMale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="남성" />
         </RadioGroup>
-
     </LinearLayout>
 
+    <!-- Age Section -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -168,24 +172,24 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textViewAge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="나이" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/spinnerAge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
-
     </LinearLayout>
 
+    <!-- Spacer -->
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
 
+    <!-- Signup Button -->
     <TextView
         android:id="@+id/buttonSignUp"
         android:layout_width="match_parent"
@@ -193,6 +197,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/rounded_corner_custom_color"
         android:gravity="center"
         android:text="가입하기"
